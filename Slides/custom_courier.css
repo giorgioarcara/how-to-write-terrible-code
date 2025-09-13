@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Consolas&display=swap');
 
 /* --- Fonts --- */
 .reveal {
   font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   color: #2e2e2e;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1.5;
 }
 
 .reveal h1,
 .reveal h2,
 .reveal h3 {
-  font-family: 'Courier Prime', cursive;
+  font-family: 'Consolas', cursive;
   font-weight: 700;
-  color: #ff6f00; /* loud orange */
-  text-shadow: 2px 2px #00000033; /* tacky shadow */
+  color: #b34700; /* loud orange */
+  /*text-shadow: 2px 2px #00000033; /* tacky shadow */
   letter-spacing: 1px;
 }
 
