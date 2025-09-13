@@ -1,9 +1,13 @@
 ---
-title: "How to Write Terrible Code"
+title: "How to Write<br> Terrible Code"
 subtitle: "A beginner guide to bad programming"
 format: revealjs
-theme: white
 css: custom_courier.css
+keep-tex: true
+title-slide-attributes:
+  data-background-image: Figures/ONDA_logo_v12a.png
+  data-background-size: 300px
+  data-background-position: center 85%
 ---
 
 ## Introduction (1/2)
@@ -38,8 +42,23 @@ _The truth: unless you have a very short task, a very long script is often diffi
 
 <br>
 
-_Using just a long script as you typically think in a less modular way and you don't break down you problem._
+__When you write long script you tend to think in a less modular way and you don't break down you problem.__
 
+## 2.Create numerous versions of your code using v1, v2, v3, etc.
+
+## 3. Don’t think before coding—just jump in and write lines of code based on instinct.
+
+## 4. Spend days and days in designing how you would code, before actually coding.
+
+## 5. If you need to reuse code throughout your analysis, copy and paste as much as possible.
+
+## 6. Do not waste time on writing comments in your code.
+
+## 7. Use the shortest possible names for your objects and functions.
+
+## 8. Always write functions that are absolutely generalizable.
+
+## 9. When using comments, comment in detail every single step.
 
 
 
