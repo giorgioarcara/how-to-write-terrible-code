@@ -1,6 +1,7 @@
 ---
 title: "How to Write<br> Terrible Code"
-subtitle: "A beginner guide to bad programming"
+subtitle: "A beginner guide to bad programming (v0.1)"
+date: "2026-05-30"
 format: revealjs
 css: custom_courier.css
 keep-tex: true
@@ -13,7 +14,7 @@ title-slide-attributes:
 ## Introduction (1/2)
 
 
-This guide, written by the Coding Group of the ONDA Lab, is **a humorous collection of bad programming habits**.
+This guide, written by the ONDA Lab, is **a humorous collection of bad programming habits**.
 While many guides explain how to write good code, we realized that another way to learn is by looking at what not to do. 
 
 
@@ -52,9 +53,9 @@ _The truth: manually versioning files leads to chaos. You end up with `analysis_
 
 <br>
 
-__Use version control (e.g. Git) instead. Every change is tracked, timestamped, and reversible — without a graveyard of files cluttering your folder.__
+__Use version control (e.g. Git) instead. Every change is tracked, timestamped, and reversible, without a graveyard of files cluttering your folder.__
 
-## 3. Don’t think before coding—just jump in and write lines of code based on instinct.
+## 3. Don’t think before coding: just jump in and write lines of code based on instinct.
 
 <br>
 
@@ -62,7 +63,7 @@ _The truth: coding without a plan often means solving the wrong problem, or buil
 
 <br>
 
-__A few minutes spent thinking about inputs, outputs, and the steps in between saves hours of untangling spaghetti code later.__
+__A few minutes spent thinking about inputs, outputs, and the steps in between saves hours of untangling cryptic code later.__
 
 ## 4. Spend days and days in designing how you would code, before actually coding.
 
@@ -78,7 +79,7 @@ __Design just enough to start, then iterate. The code itself will show you what 
 
 <br>
 
-_The truth: copy-pasted code means that when you find a bug — and you will — you have to hunt it down in every single copy. You will always miss at least one._
+_The truth: copy-pasted code means that when you find a bug (and you will) you have to hunt it down in every single copy. You will always miss at least one._
 
 <br>
 
@@ -92,7 +93,7 @@ _The truth: code you wrote six months ago might as well have been written by a s
 
 <br>
 
-__But don’t explain *what* the code does — explain *why*. A good comment captures intent and hidden constraints, not mechanics that the code already shows.__
+__But don’t explain *what* the code does: explain *why*. A good comment captures intent and hidden constraints, not mechanics that the code already shows.__
 
 ## 7. Use the shortest possible names for your objects and functions.
 
@@ -122,17 +123,17 @@ _The truth: over-commenting clutters the code and makes it harder to read. A com
 
 <br>
 
-__`# add 1 to i` above `i <- i + 1` is not a comment — it’s pollution. Save your comments for the non-obvious parts: the edge case, the workaround, the invariant that isn’t obvious from the code alone.__
+__`# add 1 to i` above `i <- i + 1` is not a comment: it’s just noise. Save your comments for the non-obvious parts: the edge case, the workaround, those parte that aren’t obvious from the code alone.__
 
-## 10. Don’t use AI, but solve every problem by hand
-
-<br>
-
-_The truth: refusing to use AI tools when they’re available is like refusing to use a calculator. It slows you down on routine tasks and leaves less mental energy for the parts that actually require thinking._
+## 10. Don’t use AI, but solve every problem by hand.
 
 <br>
 
-__But don’t outsource your thinking entirely either. If you can’t read, understand, and explain the code AI wrote for you, you don’t own it — and you won’t be able to fix it when it breaks.__
+_The truth: refusing to use AI tools when they’re available is (in some way) like refusing to use a calculator. It slows you down on routine tasks and leaves less mental energy for the parts that actually require thinking._
+
+<br>
+
+__But don’t outsource your thinking entirely either. If you can’t read, understand, and explain the code AI wrote for you, you don’t own it. Also you won’t be able to fix it when it breaks.__
 
 
 

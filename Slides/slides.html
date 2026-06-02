@@ -9,6 +9,7 @@
 <link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.31">
 
+  <meta name="dcterms.date" content="2026-05-30">
   <title>How to Write  Terrible Code</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -128,18 +129,19 @@
 
 <section id="title-slide" data-background-image="Figures/ONDA_logo_v12a.png" data-background-position="center 85%" data-background-size="300px" class="quarto-title-block center">
   <h1 class="title">How to Write<br> Terrible Code</h1>
-  <p class="subtitle">A beginner guide to bad programming</p>
+  <p class="subtitle">A beginner guide to bad programming (v0.1)</p>
 
 <div class="quarto-title-authors">
 </div>
 
+  <p class="date">2026-05-30</p>
 </section>
 <section id="introduction-12" class="slide level2">
 <h2>Introduction (1/2)</h2>
-<p>This guide, written by the Coding Group of the ONDA Lab, is <strong>a humorous collection of bad programming habits</strong>. While many guides explain how to write good code, we realized that another way to learn is by looking at what not to do.</p>
+<p>This guide, written by the ONDA Lab, is <strong>a humorous collection of bad programming habits</strong>. While many guides explain how to write good code, we realized that another way to learn is by looking at what not to do.</p>
 </section>
-<section id="introduction-12-1" class="slide level2">
-<h2>Introduction (1/2)</h2>
+<section id="introduction-22" class="slide level2">
+<h2>Introduction (2/2)</h2>
 <p>After all, most of us (certainly we, at least) are naturally prone to becoming bad programmers. So instead of only focusing on the “right” way, this guide highlights the habits you really shouldn’t have (but probably already do).</p>
 <p><br></p>
 <p><strong>Enjoy!</strong></p>
@@ -158,28 +160,67 @@
 <p><strong>When you write long script you tend to think in a less modular way and you don’t break down you problem.</strong></p>
 </section>
 <section id="create-numerous-versions-of-your-code-using-v1-v2-v3-etc." class="slide level2">
-<h2>2.Create numerous versions of your code using v1, v2, v3, etc.</h2>
+<h2>2. Create numerous versions of your code using v1, v2, v3, etc.</h2>
+<p><br></p>
+<p><em>The truth: manually versioning files leads to chaos. You end up with <code>analysis_v1.R</code>, <code>analysis_v2_final.R</code>, <code>analysis_v2_final_REAL.R</code>, and no idea which one is actually current — or what changed between them.</em></p>
+<p><br></p>
+<p><strong>Use version control (e.g.&nbsp;Git) instead. Every change is tracked, timestamped, and reversible, without a graveyard of files cluttering your folder.</strong></p>
 </section>
-<section id="dont-think-before-codingjust-jump-in-and-write-lines-of-code-based-on-instinct." class="slide level2">
-<h2>3. Don’t think before coding—just jump in and write lines of code based on instinct.</h2>
+<section id="dont-think-before-coding-just-jump-in-and-write-lines-of-code-based-on-instinct." class="slide level2">
+<h2>3. Don’t think before coding: just jump in and write lines of code based on instinct.</h2>
+<p><br></p>
+<p><em>The truth: coding without a plan often means solving the wrong problem, or building something that needs to be completely rewritten once the real structure becomes clear.</em></p>
+<p><br></p>
+<p><strong>A few minutes spent thinking about inputs, outputs, and the steps in between saves hours of untangling cryptic code later.</strong></p>
 </section>
 <section id="spend-days-and-days-in-designing-how-you-would-code-before-actually-coding." class="slide level2">
 <h2>4. Spend days and days in designing how you would code, before actually coding.</h2>
+<p><br></p>
+<p><em>The truth: over-planning is just procrastination in disguise. You can’t anticipate every problem until you start writing real code, and a perfect design on paper rarely survives contact with reality.</em></p>
+<p><br></p>
+<p><strong>Design just enough to start, then iterate. The code itself will show you what you didn’t think of.</strong></p>
 </section>
 <section id="if-you-need-to-reuse-code-throughout-your-analysis-copy-and-paste-as-much-as-possible." class="slide level2">
 <h2>5. If you need to reuse code throughout your analysis, copy and paste as much as possible.</h2>
+<p><br></p>
+<p><em>The truth: copy-pasted code means that when you find a bug (and you will) you have to hunt it down in every single copy. You will always miss at least one.</em></p>
+<p><br></p>
+<p><strong>Write a function instead. Fix the logic once, and every caller benefits automatically. Your future self will thank you.</strong></p>
 </section>
 <section id="do-not-waste-time-on-writing-comments-in-your-code." class="slide level2">
 <h2>6. Do not waste time on writing comments in your code.</h2>
+<p><br></p>
+<p><em>The truth: code you wrote six months ago might as well have been written by a stranger. Without any comments, you’ll spend more time re-understanding your own work than writing new code.</em></p>
+<p><br></p>
+<p><strong>But don’t explain <em>what</em> the code does: explain <em>why</em>. A good comment captures intent and hidden constraints, not mechanics that the code already shows.</strong></p>
 </section>
 <section id="use-the-shortest-possible-names-for-your-objects-and-functions." class="slide level2">
 <h2>7. Use the shortest possible names for your objects and functions.</h2>
+<p><br></p>
+<p><em>The truth: <code>x</code>, <code>tmp</code>, <code>df2</code>, <code>f</code> — these names say absolutely nothing. The next time you open the file (or someone else does), you’ll have no idea what any of it means.</em></p>
+<p><br></p>
+<p><strong>Names are free documentation. <code>patient_age_at_baseline</code> is always better than <code>pab</code>. If the name needs a comment to explain it, the name is wrong.</strong></p>
 </section>
 <section id="always-write-functions-that-are-absolutely-generalizable." class="slide level2">
 <h2>8. Always write functions that are absolutely generalizable.</h2>
+<p><br></p>
+<p><em>The truth: building a perfectly general-purpose function for a one-off task is over-engineering. It takes longer to write, harder to test, and more often than not, it never gets reused.</em></p>
+<p><br></p>
+<p><strong>Write for the problem in front of you. You can generalize later, if and when you actually need to. “You Aren’t Gonna Need It” is a principle, not an excuse to be lazy.</strong></p>
 </section>
 <section id="when-using-comments-comment-in-detail-every-single-step." class="slide level2">
 <h2>9. When using comments, comment in detail every single step.</h2>
+<p><br></p>
+<p><em>The truth: over-commenting clutters the code and makes it harder to read. A comment that just restates what the code obviously does adds noise, not signal.</em></p>
+<p><br></p>
+<p><strong><code># add 1 to i</code> above <code>i &lt;- i + 1</code> is not a comment: it’s just noise. Save your comments for the non-obvious parts: the edge case, the workaround, those parte that aren’t obvious from the code alone.</strong></p>
+</section>
+<section id="dont-use-ai-but-solve-every-problem-by-hand." class="slide level2">
+<h2>10. Don’t use AI, but solve every problem by hand.</h2>
+<p><br></p>
+<p><em>The truth: refusing to use AI tools when they’re available is (in some way) like refusing to use a calculator. It slows you down on routine tasks and leaves less mental energy for the parts that actually require thinking.</em></p>
+<p><br></p>
+<p><strong>But don’t outsource your thinking entirely either. If you can’t read, understand, and explain the code AI wrote for you, you don’t own it. Also you won’t be able to fix it when it breaks.</strong></p>
 
 </section>
     </div>
